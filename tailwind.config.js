@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-background': '#0F1624'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+],
 }
 
