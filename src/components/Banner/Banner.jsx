@@ -3,7 +3,21 @@ import RocketIcon from "../RocketIcon";
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 const Banner = () => {
-   
+    const [orbit, setOrbit] = useState(0)
+    
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setOrbit((prevOrbit => prevOrbit + 1))
+        }, 50);
+
+        return () => {
+            clearInterval(intervalId)
+        }
+    }, [])
+
+    const rocketX = 100 * Math.cos((orbit * Math.PI) / 180);
+    const rocketY = 100 * Math.sin((orbit * Math.PI) / 180)
 
   return (
     <div className="mt-20">
@@ -23,15 +37,20 @@ Explore my projects, check out my skills, and let's collaborate on your next dig
 <button>[View My Projects](#projects)</button> | [Get in Touch](#contact-me)
 </div>
 <Tooltip id="myName" />
+
+<div className="flex relative items-center mx-auto mt-12">
 <motion.div 
 whileHover={{scale: 1.1}}
 whileTap={{scale: 0.9}}
-className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+style={{
+    top: `calc(50% - ${rocketY}px)`,
+    left: `calc(50% - ${rocketX}px)`
+}}
+className="absolute text-2xl"
 >
     
-🚀
+    🚀
 </motion.div>
-<div className="flex items-center mx-auto mt-12">
 
     <span className="mr-4 font-bold text-3xl">Welcome to </span>
     <motion.div></motion.div> 
