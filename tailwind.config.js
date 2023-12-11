@@ -6,8 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'customPoppins': 'Poppins, sans-serif'
+      },
       colors: {
-        'custom-background': '#0F1624'
+        'artificialLightPeach': '#89B9AD',
+        'artificialPastel': '#C7DCA7',
+        'artificialPeach': '#FFEBD8',
+        'artificialPink': '#FFC5C5'
       }
     },
   },

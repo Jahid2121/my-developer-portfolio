@@ -10,6 +10,8 @@ import { router } from './routes/Router';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <div className='max-w-4xl mx-auto font-customPoppins'>
     <RouterProvider router={router} />
+    </div>
   </React.StrictMode>,
 )
