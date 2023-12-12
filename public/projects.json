@@ -1,0 +1,21 @@
+[
+    {
+      "projectName": "Uni Dine Hub",
+      "img": "https://i.ibb.co/XWC5QJj/screencapture-uni-dine-hub-web-app-2023-12-12-16-58-34.png",
+      "details": "A website to serve meals to university students.",
+      "githubLink": "https://github.com/Jahid2121/unidine-hub-client"
+    },
+    {
+      "projectName": "pro hunters",
+      "img": "https://i.ibb.co/s9YBH4z/screencapture-pro-hunters-web-app-2023-12-12-16-55-14.png",
+      "details": "Allows users to explore jobs by category, apply for positions, and manage their own job postings.",
+      "githubLink": "https://github.com/Jahid2121/pro-hunters-client"
+    },
+    {
+      "projectName": "futuristix tech",
+      "img": "https://i.ibb.co/K2npn05/screencapture-futuristix-tech-web-app-home-2023-12-12-16-57-04.png",
+      "details": "Your one-stop destination for cutting-edge technology products! Explore top brands and discover the future of technology.",
+      "githubLink": "https://github.com/Jahid2121/futuristix-tech-client"
+    }
+  ]
+  
