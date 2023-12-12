@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { Link } from "react-router-dom";
+import Btn from "../Btn";
 
 const Project = ({ project }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,9 +23,9 @@ const Project = ({ project }) => {
         <h2 className="card-title">{project.projectName}</h2>
         <p>{project.details}</p>
         <div className="card-actions justify-end">
-          <a href={project.githubLink} className="btn btn-primary">
-            View on GitHub
-          </a>
+          <Link to={project.githubLink} className="">
+            <Btn text={'View on GitHub'} />
+          </Link>
         </div>
       </div>
       <Modal
@@ -32,7 +34,7 @@ const Project = ({ project }) => {
         contentLabel={project.projectName}
       >
         <img src={project.img} alt={project.projectName} />
-        <button className="btn absolute  top-14 right-0 btn-primary" onClick={closeModal}>Close</button>
+        <button className=" absolute z-30  top-5 right-0" onClick={closeModal}><Btn text={"Close"}></Btn></button>
       </Modal>
     </div>
   );
