@@ -3,12 +3,11 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import reactLogo from '../../assets/react.svg'
 import {  RiJavascriptFill } from "react-icons/ri";
-import cv from "../../assets/cursor.png"
 import Btn from "../Btn";
 import '../Banner/Banner.css'
 import { Link } from "react-router-dom";
 import { saveAs } from 'file-saver';
-
+import TypeAnime from "../TypeAnime";
 
 const Banner = () => {
     const handleDownload = () => {
@@ -17,28 +16,20 @@ const Banner = () => {
         saveAs(blob, 'your-file.txt');
       };
     const [orbit, setOrbit] = useState(0)
-    const [displayText, setDisplayText] = useState('Ideas');
     
     
-    const textOptions = ['', 'Into', 'Reality'];
-    const textIndex = textOptions.indexOf(displayText);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setOrbit((prevOrbit => prevOrbit + 1))
         }, 50);
 
-        const textLoad = () => {
-            const nextIndex = (textIndex + 1) % textOptions.length;
-            setDisplayText(textOptions[nextIndex]);
-          };
+
       
-          const textIntervalId = setInterval(textLoad, 4000);
 
 
         return () => {
             clearInterval(intervalId)
-            clearInterval(textIntervalId);
         }
     }, [])
 
@@ -54,13 +45,10 @@ const Banner = () => {
       <div>
       
 
-<div className="text-2xl container mt-16 font-bold text-center"> 🚀 Transforming Ideas<p>{' '}</p>  
-<span className="text first-text">{displayText}</span>
 
-  </div>
 <div className="flex flex-col-reverse">
+    <TypeAnime />
 <div>
-
 <h3 className="text-3xl mt-16 font-bold text-center">Hi! It's me, Jahid Hasan</h3>
 <p className="text-2xl mt-4 font-bold text-center text-artificialPastel"> 💻 Front-End Web Developer</p>
 
