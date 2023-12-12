@@ -5,6 +5,7 @@ import reactLogo from '../../assets/react.svg'
 import {  RiJavascriptFill } from "react-icons/ri";
 import Btn from "../Btn";
 import '../Banner/Banner.css'
+import { Link } from "react-router-dom";
 const Banner = () => {
     const [orbit, setOrbit] = useState(0)
     const [displayText, setDisplayText] = useState('Ideas');
@@ -56,7 +57,7 @@ const Banner = () => {
 <p className="text-center">Explore my projects, check out my skills, and let's collaborate on your next digital venture.</p>
 
 <div className="mt-4 flex gap-5 justify-center">
-<Btn  text={"View My Projects"} /> | <Btn text="Get in Touch" />
+<Link download={}><Btn  text={"Download CV"} /></Link> | <Btn text="Get in Touch" />
 </div>
 </div>
 <Tooltip id="myName" />
