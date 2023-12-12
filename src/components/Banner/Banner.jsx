@@ -4,17 +4,30 @@ import { useEffect, useState } from "react";
 import reactLogo from '../../assets/react.svg'
 import {  RiJavascriptFill } from "react-icons/ri";
 import Btn from "../Btn";
+import '../Banner/Banner.css'
 const Banner = () => {
     const [orbit, setOrbit] = useState(0)
+    const [displayText, setDisplayText] = useState('Ideas');
     
+    const textOptions = ['', 'Into', 'Reality'];
+    const textIndex = textOptions.indexOf(displayText);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setOrbit((prevOrbit => prevOrbit + 1))
         }, 50);
 
+        const textLoad = () => {
+            const nextIndex = (textIndex + 1) % textOptions.length;
+            setDisplayText(textOptions[nextIndex]);
+          };
+      
+          const textIntervalId = setInterval(textLoad, 4000);
+
+
         return () => {
             clearInterval(intervalId)
+            clearInterval(textIntervalId);
         }
     }, [])
 
@@ -30,7 +43,10 @@ const Banner = () => {
       <div>
       
 
-<p className="text-2xl mt-16 font-bold text-center"> 🚀 Transforming Ideas into Reality </p>
+<div className="text-2xl container mt-16 font-bold text-center"> 🚀 Transforming Ideas<p>{' '}</p>  
+<span className="text first-text">{displayText}</span>
+
+  </div>
 <div className="flex flex-col-reverse">
 <div>
 
@@ -81,6 +97,7 @@ className="absolute text-2xl"
     <span className="ml-6 font-bold text-3xl">Portfolio</span></div>
 </div>
     </div>
+
     </div>
   );
 };
