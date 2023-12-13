@@ -2,17 +2,17 @@ import { Tooltip } from "react-tooltip";
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import reactLogo from '../../assets/react.svg'
-import {  RiJavascriptFill } from "react-icons/ri";
 import Btn from "../Btn";
 import { Link } from "react-router-dom";
 import { saveAs } from 'file-saver';
 import TypeAnime from "../TypeAnime";
+import { FaJs } from "react-icons/fa";
 
 const Banner = () => {
     const handleDownload = () => {
 
-        const blob = new Blob(['Hello, World!'], { type: 'text/plain;charset=utf-8' });
-        saveAs(blob, 'your-file.txt');
+        const blob = new Blob(['Resume! coming soon'], { type: 'text/plain;charset=utf-8' });
+        saveAs(blob, "Jahid's Resume.txt");
       };
     const [orbit, setOrbit] = useState(0)
     
@@ -45,7 +45,7 @@ const Banner = () => {
       
 
 
-<div className="flex flex-col-reverse pt-20">
+<div className="flex flex-col-reverse pt-24">
     <TypeAnime />
 <div>
 <h3 className="text-3xl mt-16 font-bold text-center">Hi! It's me, Jahid Hasan</h3>
@@ -53,9 +53,12 @@ const Banner = () => {
 
 <p className="text-center">Explore my projects, check out my skills, and let's collaborate on your next digital venture.</p>
 
-<button onClick={handleDownload} className="mt-4 flex gap-5 justify-center">
-<Link download={'cv'}><Btn  text={"Download CV"} /></Link> | <Btn text="Get in Touch" />
+<div  className="mt-4 flex gap-5 justify-center">
+<button onClick={handleDownload}>
+<Link download={'cv'}><Btn  text={"Download Resume"} /></Link> 
 </button>
+| <Btn text="Get in Touch" />
+</div>
 </div>
 <Tooltip id="myName" />
 
@@ -70,7 +73,7 @@ style={{
 className="absolute text-2xl"
 >
 <span>
-          <img  src='https://i.ibb.co/ZdD35vT/node-js.png' className="w-7" alt="Node logo" />
+          <FaJs />
         </span>
     
 </motion.div>
@@ -89,7 +92,7 @@ className="absolute text-2xl"
     
 </div>
 
-    <span className="mr-6 font-bold text-3xl">Welcome to </span>
+    <span className="mr-8 font-bold text-3xl">Welcome to </span>
     <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan's"  className="w-[200px] rounded-full  p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
     <span className="ml-6 font-bold text-3xl">Portfolio</span></div>
 </div>

@@ -7,7 +7,7 @@ import SectionTitle from "../SectionTitle";
         <SectionTitle Title="<Skills" />
        <p>
   <span className="text-center mx-auto ">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,firebase,sass,mongodb,express,nodejs,nextjs" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,firebase,mongodb,express" />
   </span>
 </p>
 <SectionTitle Title="/>" />
