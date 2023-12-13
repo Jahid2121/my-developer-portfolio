@@ -1,19 +1,38 @@
+import axios from "axios";
 import Btn from "../Btn";
 
 
 const GetInTouch = () => {
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    const name = form.name.value 
+    const email = form.email.value 
+    const message = form.message.value 
+    const formData = {
+      name: name,
+      email: email,
+      message: message
+    }
+    axios.post('http://localhost:5000/sendEmail', formData)
+    .then(res => {
+      res.data
+    })
+    .catch(error => {
+      console.log(error);
+    })
+  }
    
   return (
     <div className="max-w-md  mx-auto my-10 p-6 bg-white rounded-md shadow-md">
       <h2 className="mt-20 ml-3 font-bold text-4xl ">Get In Touch</h2>
-      <form >
+      <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium ">
             Name
           </label>
           <input
             type="text"
-            id="name"
             name="name"
             className="mt-1 p-2 w-full border rounded-md"
             placeholder="Your Name"
@@ -25,7 +44,6 @@ const GetInTouch = () => {
           </label>
           <input
             type="email"
-            id="email"
             name="email"
             className="mt-1 p-2 w-full border rounded-md"
             placeholder="Your Email"

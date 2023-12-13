@@ -16,8 +16,8 @@ const Projects = () => {
    <>
    <SectionTitle Title="<Projects" />
     <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
-      {projects?.map((project, index) => (
-        <Project key={index} project={project} />
+      {projects?.map((project) => (
+        <Project key={project._id} project={project} />
       ))}
     </div>
     <SectionTitle Title="/>" />
