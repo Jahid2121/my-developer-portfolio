@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import reactLogo from '../../assets/react.svg'
 import {  RiJavascriptFill } from "react-icons/ri";
 import Btn from "../Btn";
-import '../Banner/Banner.css'
 import { Link } from "react-router-dom";
 import { saveAs } from 'file-saver';
 import TypeAnime from "../TypeAnime";
@@ -68,9 +67,11 @@ style={{
     top: `calc(50% + ${reactY}px)`,
     left: `calc(50% + ${reactX}px)`
 }}
-className="absolute text-3xl"
+className="absolute text-2xl"
 >
-    <RiJavascriptFill /> 
+<span>
+          <img  src='https://i.ibb.co/ZdD35vT/node-js.png' className="w-7" alt="Node logo" />
+        </span>
     
 </motion.div>
 

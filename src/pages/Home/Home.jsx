@@ -2,6 +2,7 @@ import Banner from "../../components/Banner/Banner";
 import Contact from "../../components/Contact/Contact";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import Projects from "../../components/Projects/Projects";
+import Skills from "../../components/Skills/Skills";
 import Navbar from "../../shared/Navbar";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Projects />
+      <Skills />
       <GetInTouch />
       <Contact />
     </div>
