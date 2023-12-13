@@ -1,6 +1,7 @@
 import axios from "axios";
 import Btn from "../Btn";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const GetInTouch = () => {
   const handleSubmit = e => {
@@ -14,10 +15,10 @@ const GetInTouch = () => {
       email: email,
       message: message
     }
+    
+    toast('Message sent Successfully !')
     axios.post('http://localhost:5000/sendEmail', formData)
-    .then(res => {
-      res.data
-    })
+    .then(() => {})
     .catch(error => {
       console.log(error);
     })
@@ -68,7 +69,7 @@ const GetInTouch = () => {
           <Btn text="Send" />
         </button>
       </form>
-      
+      <ToastContainer />
     </div>
     
   );
