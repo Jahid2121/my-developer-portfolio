@@ -34,7 +34,7 @@ const Project = ({ project }) => {
         contentLabel={project.projectName}
       >
         <img src={project.img} alt={project.projectName} />
-        <button className=" absolute z-30  top-5 right-0" onClick={closeModal}><Btn text={"Close"}></Btn></button>
+        <button className=" absolute z-30  top-16 right-0" onClick={closeModal}><Btn text={"Close"}></Btn></button>
       </Modal>
     </div>
   );
