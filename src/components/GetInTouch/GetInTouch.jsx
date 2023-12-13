@@ -25,7 +25,7 @@ const GetInTouch = () => {
   }
    
   return (
-    <div className="max-w-md  mx-auto my-10 p-6 bg-white rounded-md shadow-md">
+    <div className="max-w-md  mx-auto pb-4 p-6 bg-artificialPastel rounded-md shadow-md">
       <h2 className="mt-20 ml-3 font-bold text-4xl ">Get In Touch</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">

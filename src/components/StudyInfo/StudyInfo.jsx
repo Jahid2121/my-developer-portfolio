@@ -6,7 +6,7 @@ const StudyInfo = () => {
    <SectionTitle Title="<Education" />
     <div className="mt-8 p-4 border rounded shadow-md bg-artificialLightPeach text-black">
 
-      <div className="mt-4 flex justify-between">
+      <div className="mt-4 flex flex-col md:flex-row justify-between">
         {/* SSC  */}
         <div className="mb-4">
           <div className="font-semibold text-2xl">SSC (Science)</div>

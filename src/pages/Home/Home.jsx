@@ -13,9 +13,9 @@ const Home = () => {
       <Banner />
       <Projects />
       <Skills />
-      <GetInTouch />
       <StudyInfo />
       <Contact />
+      <GetInTouch />
     </div>
   );
 };
