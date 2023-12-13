@@ -40,12 +40,12 @@ const Banner = () => {
     const reactY2 = 100 * Math.sin((orbit * Math.PI) / 180)
 
   return (
-    <div className="mt-20">
+    <div className="">
       <div>
       
 
 
-<div className="flex flex-col-reverse">
+<div className="flex flex-col-reverse pt-20">
     <TypeAnime />
 <div>
 <h3 className="text-3xl mt-16 font-bold text-center">Hi! It's me, Jahid Hasan</h3>
@@ -76,9 +76,7 @@ className="absolute text-2xl"
 </motion.div>
 
 
-<motion.div 
-whileHover={{scale: 1.1}}
-whileTap={{scale: 0.9}}
+<div 
 style={{
     top: `calc(50% - ${reactY2}px)`,
     left: `calc(50% - ${reactX2}px)`
@@ -89,11 +87,10 @@ className="absolute text-2xl"
           <img src={reactLogo} className="logo react" alt="React logo" />
         </span>
     
-</motion.div>
+</div>
 
     <span className="mr-6 font-bold text-3xl">Welcome to </span>
-    <motion.div></motion.div> 
-    <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan's"  className="w-[200px] hover: rounded-full border p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
+    <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan's"  className="w-[200px] rounded-full  p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
     <span className="ml-6 font-bold text-3xl">Portfolio</span></div>
 </div>
     </div>
