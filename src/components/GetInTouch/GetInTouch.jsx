@@ -17,7 +17,7 @@ const GetInTouch = () => {
     }
     
     toast('Message sent Successfully !')
-    axios.post('http://localhost:5000/sendEmail', formData)
+    axios.post('https://developer-portfolio-server-sepia.vercel.app/sendEmail', formData)
     .then(() => {})
     .catch(error => {
       console.log(error);

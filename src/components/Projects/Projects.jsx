@@ -7,7 +7,7 @@ const Projects = () => {
 
 
     useEffect(() => {
-       fetch('http://localhost:5000/projects')
+       fetch('https://developer-portfolio-server-sepia.vercel.app/projects')
        .then(res => res.json())
        .then(data => setProjects(data))
       }, []);
