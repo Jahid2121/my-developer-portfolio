@@ -45,11 +45,11 @@ const Banner = () => {
       
 
 
-<div className="flex flex-col-reverse pt-24">
+<div className="flex flex-col-reverse pt-24 text-white">
     <TypeAnime />
 <div>
 <h3 className="text-3xl mt-16 font-bold text-center">Hi! It's me, Jahid Hasan</h3>
-<p className="text-2xl mt-4 font-bold text-center text-artificialPastel"> 💻 Front-End Web Developer</p>
+<p className="text-2xl mt-4 font-bold text-center text-artificialCyan"> 💻 Front-End Web Developer</p>
 
 <p className="text-center">Explore my projects, check out my skills, and let's collaborate on your next digital venture.</p>
 

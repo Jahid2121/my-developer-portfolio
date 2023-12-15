@@ -6,7 +6,7 @@ const Project = ({ project }) => {
 
 
   return (
-    <div className="container bg-artificialPastel">
+    <div className="container bg-artificialCyan">
       <Tooltip id="clickEvent" />
       <Link to={project.liveLink}>
       <div data-tooltip-id="clickEvent" data-tooltip-content="Click to Open Live Preview"  style={{backgroundImage: `url(${project.img})`}} className="box box-1 bg-cover h-[300px] cursor-pointer transition-all group-hover:bg-bottom ease-in-out duration-[6s]">

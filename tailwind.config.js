@@ -10,9 +10,9 @@ export default {
         'customPoppins': 'Poppins, sans-serif'
       },
       colors: {
-        'artificialLightPeach': '#89B9AD',
-        'artificialPastel': '#C7DCA7',
-        'artificialPeach': '#FFEBD8',
+        'artificialNavyBlue': '#0F1624',
+        'artificialCyan': '#13ADC7',
+        'artificialBlue': '#6978D1',
         'artificialPink': '#FFC5C5'
       }
     },
