@@ -20,7 +20,9 @@ const Projects = () => {
         <Project key={project._id} project={project} />
       ))}
     </div>
-    <SectionTitle Title="/>" />
+    <div className=" flex justify-end">
+    <SectionTitle  Title="/>" />
+    </div>
    </>
   );
 };
