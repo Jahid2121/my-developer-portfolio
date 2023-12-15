@@ -10,7 +10,9 @@ import SectionTitle from "../SectionTitle";
     <img src="https://skillicons.dev/icons?i=html,css,js,react,firebase,mongodb,express" />
   </span>
 </p>
+<div className="flex justify-end">
 <SectionTitle Title="/>" />
+</div>
      </div>
    );
  };

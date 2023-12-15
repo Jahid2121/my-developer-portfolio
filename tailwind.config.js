@@ -13,7 +13,6 @@ export default {
         'artificialNavyBlue': '#0F1624',
         'artificialCyan': '#13ADC7',
         'artificialBlue': '#6978D1',
-        'artificialPink': '#FFC5C5'
       }
     },
   },
