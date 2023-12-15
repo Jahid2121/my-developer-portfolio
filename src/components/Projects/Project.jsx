@@ -1,25 +1,17 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import Btn from "../Btn";
-
+import "../Projects/Project.css"
+import { Tooltip } from "react-tooltip";
 const Project = ({ project }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="card card-compact mt-12 bg-artificialPastel shadow-xl">
-      <figure>
-        <img
-          className="h-80 cursor-pointer"
-          src={project.img}
-          alt={project.projectName}
-          onClick={openModal}
-        />
-      </figure>
-      <div className="card-body">
+    <div className="container bg-artificialPastel">
+      <Tooltip id="clickEvent" />
+      <div data-tooltip-id="clickEvent" data-tooltip-content="Click to Open Live Link"  style={{backgroundImage: `url(${project.img})`}} className="box box-1 bg-cover h-[300px] cursor-pointer transition-all group-hover:bg-bottom ease-in-out duration-[6s]">
+
+</div>
+<div className="card-body">
         <h2 className="card-title">{project.projectName}</h2>
         <p>{project.details}</p>
         <div className="card-actions justify-end">
@@ -28,15 +20,12 @@ const Project = ({ project }) => {
           </Link>
         </div>
       </div>
-      <Modal
-        isOpen={isModalOpen}
-        onRequestClose={closeModal}
-        contentLabel={project.projectName}
-      >
-        <img src={project.img} alt={project.projectName} />
-        <button className=" absolute z-30  top-16 right-0" onClick={closeModal}><Btn text={"Close"}></Btn></button>
-      </Modal>
+
+
+<div>
+
     </div>
+  </div> 
   );
 };
 

@@ -1,0 +1,19 @@
+.container {
+    
+
+    
+}
+
+.container .box {
+    height: ;
+    background-position: top;
+}
+
+.container .box.box-1 {
+
+}
+
+
+.container .box:hover{
+    background-position: bottom;
+}
