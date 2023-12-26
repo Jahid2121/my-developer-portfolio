@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
@@ -16,6 +17,7 @@ const Home = () => {
       <StudyInfo />
       <Contact />
       <GetInTouch />
+      <Footer />
     </div>
   );
 };

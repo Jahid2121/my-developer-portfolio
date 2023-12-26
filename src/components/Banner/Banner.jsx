@@ -9,11 +9,21 @@ import TypeAnime from "../TypeAnime";
 import { FaJs } from "react-icons/fa";
 
 const Banner = () => {
-    const handleDownload = () => {
+  const handleDownload = () => {
+    const pdfFilePath = '/public/ResumeJahidHasan.pdf'
+    fetch(pdfFilePath)
+    .then(res => res.blob())
+    .then(blob => {
+      saveAs(blob, 'ResumeOfJahid.pdf')
+      
+    })
+    .catch(error => {
+      console.error('error downloading pdf file', error);
+    })
 
-        const blob = new Blob(['Resume! coming soon'], { type: 'text/plain;charset=utf-8' });
-        saveAs(blob, "Jahid's Resume.txt");
-      };
+  };
+  
+  
     const [orbit, setOrbit] = useState(0)
     
     
