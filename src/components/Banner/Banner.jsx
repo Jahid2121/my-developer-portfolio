@@ -63,7 +63,7 @@ const Banner = () => {
 
 <p className="text-center">Explore my projects, check out my skills, and let's collaborate on your next digital venture.</p>
 
-<div  className="mt-4 flex gap-5 justify-center">
+<div  className="mt-4 flex  flex-row  gap-5 justify-center">
 <button onClick={handleDownload}>
 <Link download={'cv'}><Btn  text={"Download Resume"} /></Link> 
 </button>
