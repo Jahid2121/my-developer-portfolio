@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
 import Project from "./Project";
 import SectionTitle from "../SectionTitle";
+import useProjects from "../../hooks/useProjects";
 
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
+    const {projects} = useProjects()
 // https://developer-portfolio-server-sepia.vercel.app
 
-    useEffect(() => {
-       fetch('http://localhost:5000/projects')
-       .then(res => res.json())
-       .then(data => setProjects(data))
-      }, []);
+    
       
   return (
    <>

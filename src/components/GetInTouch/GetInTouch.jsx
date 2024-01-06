@@ -2,8 +2,10 @@ import axios from "axios";
 import Btn from "../Btn";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const GetInTouch = () => {
+  const axiosPublic = useAxiosPublic()
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -17,7 +19,7 @@ const GetInTouch = () => {
     }
     
     toast('Message sent Successfully !')
-    axios.post('http://localhost:5000/sendEmail', formData)
+    axiosPublic.post('/sendEmail', formData)
     .then(() => {})
     .catch(error => {
       console.log(error);

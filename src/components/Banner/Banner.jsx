@@ -10,7 +10,7 @@ import { FaJs } from "react-icons/fa";
 
 const Banner = () => {
   const handleDownload = () => {
-    const pdfFilePath = '/public/ResumeJahidHasan.pdf'
+    const pdfFilePath = '/public/ResumeOfJahid.pdf'
     fetch(pdfFilePath)
     .then(res => res.blob())
     .then(blob => {

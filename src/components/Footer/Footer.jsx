@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="col-lg-4">
                 <h4 className="text-2xl">Connect With Me</h4>
                 <ul className="social-icons text-2xl flex gap-4 justify-center">
-                    <li><NavLink href="https://github.com/jahid2121" target="_blank"><FaGithub /></NavLink></li>
+                    <li ><NavLink href="https://github.com/jahid2121" target="_blank"><FaGithub /></NavLink></li>
                     <li><NavLink href="https://linkedin.com/in/yourusername" target="_blank"><FaLinkedinIn /></NavLink></li>
 
                 </ul>
