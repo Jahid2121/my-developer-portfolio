@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { saveAs } from 'file-saver';
 import TypeAnime from "../TypeAnime";
 import { FaJs } from "react-icons/fa";
+import { scroller } from "react-scroll";
 
 const Banner = () => {
   const handleDownload = () => {
@@ -49,6 +50,15 @@ const Banner = () => {
     const reactX2 = 100 * Math.cos((orbit * Math.PI) / 180);
     const reactY2 = 100 * Math.sin((orbit * Math.PI) / 180)
 
+    const handleScroll = () => {
+      scroller.scrollTo('getInTouch', {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+        offset: -50
+      })
+    }
+
   return (
     <div className="">
       <div>
@@ -73,7 +83,7 @@ const Banner = () => {
        <span className="hidden md:inline">Download</span> Resume
     </motion.span></Link> 
 </button>
-| <Btn text="Get in Touch" />
+| <button onClick={handleScroll}><Btn text="Get in Touch" /></button>
 </div>
 </div>
 <Tooltip id="myName" />

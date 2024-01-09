@@ -27,7 +27,7 @@ const GetInTouch = () => {
   }
    
   return (
-    <div className="max-w-md  mx-auto bg-artificialNavyBlue border border-white text-white pb-4 p-6 bg- rounded-md shadow-md">
+    <div id="getInTouch" className="max-w-md  mx-auto bg-artificialNavyBlue border border-white text-white pb-4 p-6 bg- rounded-md shadow-md">
       <h2 className="mt-20 ml-3 font-bold text-4xl ">Get In Touch</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -37,7 +37,7 @@ const GetInTouch = () => {
           <input
             type="text"
             name="name"
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 text-black p-2 w-full border rounded-md"
             placeholder="Your Name"
           />
         </div>
@@ -48,19 +48,19 @@ const GetInTouch = () => {
           <input
             type="email"
             name="email"
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 text-black p-2 w-full border rounded-md"
             placeholder="Your Email"
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="message" className="block text-sm font-medium ">
+          <label htmlFor="message" className="block  text-sm font-medium ">
             Message
           </label>
           <textarea
             id="message"
             name="message"
             rows="4"
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 text-black w-full border rounded-md"
             placeholder="Your Message"
           ></textarea>
         </div>
