@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="site-footer mt-14 pb-7 border border-white p-8  text-white">
+    <footer className=" mt-14 pb-7 border border-white p-8  text-white">
     <div className="container">
-        <div className="row flex gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-16">
             <div className="col-lg-4">
                 <h4 className="text-2xl">Contact Information</h4>
                 <p><i className="fas fa-envelope"></i> Email: jahidhasan20u@gmail.com</p>

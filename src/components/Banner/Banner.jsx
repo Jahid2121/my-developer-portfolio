@@ -65,7 +65,13 @@ const Banner = () => {
 
 <div  className="mt-4 flex  flex-row  gap-5 justify-center">
 <button onClick={handleDownload}>
-<Link download={'cv'}><Btn  text={"Download Resume"} /></Link> 
+<Link download={'cv'} > <motion.span
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      className="bg-gradient-to-r from-purple-500 to-cyan-600 w-1 cursor-pointer px-2 md:px-4 font-semibold py-1 md:py-2"
+    >
+       <span className="hidden md:inline">Download</span> Resume
+    </motion.span></Link> 
 </button>
 | <Btn text="Get in Touch" />
 </div>
