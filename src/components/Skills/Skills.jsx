@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle";
  
  const Skills = () => {
    return (
-     <div className="mt-40">
+     <div  className="mt-40">
         <SectionTitle Title="<Skills" />
        <p>
   <span className="text-center mx-auto ">

@@ -60,7 +60,7 @@ const Banner = () => {
     }
 
   return (
-    <div className="">
+    <div  data-aos="flip-left">
       <div>
       
 
@@ -118,7 +118,7 @@ className="absolute text-2xl"
     
 </div>
 
-    <span className="mr-8 font-bold text-3xl">Welcome to </span>
+    <span  className="mr-8 font-bold text-3xl">Welcome to </span>
     <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan's"  className="w-[200px] rounded-full  p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
     <span className="ml-6 font-bold text-3xl">Portfolio</span></div>
 </div>
