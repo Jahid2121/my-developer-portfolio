@@ -17,7 +17,7 @@ const Project = ({ project }) => {
         <h2 className="card-title text-white ">{project.projectName}</h2>
         <div className="w-28 h-[3px] bg-gradient-to-r from-purple-500 to-cyan-600"></div>
         <p className="text-white">{project.details}</p>
-        <div className="card-actions justify-end mt-3">
+        <div className="card-actions text-white justify-end mt-3">
           <Link to={project.githubLink} className="">
             <Btn text={'View in GitHub'} />
           </Link>

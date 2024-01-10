@@ -4,6 +4,7 @@ import Btn from "../Btn";
 import { saveAs } from 'file-saver';
 import TypeAnime from "../TypeAnime";
 import { IoMdDownload } from "react-icons/io";
+import AnimatedNavbar from "../AnimatedNavbar/AnimatedNavbar";
 
 
 const Banner = () => {
@@ -29,26 +30,26 @@ const Banner = () => {
   return (
     <div  data-aos="flip-left">
       <div>
-      
 
 
-<div className="flex flex-col-reverse pt-24 text-white">
-    <TypeAnime />
+<div className="flex  pt-24 text-white">
+   
 
 <Tooltip id="myName" />
+      <AnimatedNavbar />
 
-<div className="flex  flex-col md:flex-row gap-32 relative items-center mx-auto mt-11">
+<div className="grid grid-cols-1 md:grid-cols-2  relative items-center mx-auto mt-11">
 
 
 
 
-    <div>
-<h3 className="text-6xl mt-16 font-bold font-customGaramond text-center">Hi! I'm Jahid Hasan</h3>
-<p className="text-2xl mt-4 font-bold text-center "> Front-End Web Developer</p>
+    <div className="md:ml-20 ml-1 ">
+<h3 className="text-3xl md:text-6xl  mt-16 font-bold font-customGaramond text-center">Hi! I'm Jahid Hasan</h3>
+<TypeAnime />
 
-<p className="text-center">Explore my projects, check out my skills, and let's collaborate on your next digital venture.</p>
+<p className="text-center text-xs">Explore my projects, check out my skills, and let's collaborate on your next digital venture.</p>
 
-<div className="mt-3  ml-10"  >
+<div className="mt-3  ml-20"  >
 <span  >
 <button
 className=""
@@ -64,7 +65,7 @@ onClick={handleDownload}
 </div>
     
     <div>
-    <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan's"  className="  p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
+    <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan"  className="w-auto  p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
     </div>
     </div>
 </div>

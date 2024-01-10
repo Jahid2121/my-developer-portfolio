@@ -3,19 +3,22 @@ import { TypeAnimation } from "react-type-animation";
 const TypeAnime = () => {
   return (
     <div>
-      <div className="text-2xl container mt-16 font-bold text-center"> 🚀 Transforming <p>{' '}</p>  
-{/* <span className="text first-text">{displayText}</span> */}
+      <div className="text-xl md:text-2xl mt-4 font-bold text-center text-artificialCoolGray">  
 <TypeAnimation
   sequence={[
-    'Ideas',
+    'Front',
     500,
-    'Ideas Into ', //  Continuing previous Text
+    'Front-End ', 
     500,
-    'Ideas Into  Reality',
+    'Front-End Web',
     500,
-    'Ideas Into ',
+    'Front-End Web Developer',
     500,
-    'Ideas',
+    'Front-End Web ',
+    500,
+    'Front-End',
+    500,
+    'Front',
     500,
     '',
     500,

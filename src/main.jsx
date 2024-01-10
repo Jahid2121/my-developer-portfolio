@@ -15,7 +15,7 @@ const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <QueryClientProvider client={queryClient}>
-     <div className='max-w-4xl mx-auto font-customPoppins'>
+     <div className='font-customPoppins'>
     <RouterProvider router={router} />
     </div>
     </QueryClientProvider>

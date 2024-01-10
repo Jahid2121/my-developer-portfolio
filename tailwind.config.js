@@ -11,8 +11,8 @@ export default {
         'customGaramond': "'Cormorant Garamond', serif"
       },
       colors: {
-        'artificialNavyBlue': '#262734',
-        'artificialCyan': '#13ADC7',
+        'artificialDarkGray': '#262734',
+        'artificialCoolGray': '#858792',
         'artificialBlue': '#6978D1',
       }
     },
