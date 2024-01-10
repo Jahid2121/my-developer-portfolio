@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'customPoppins': 'Poppins, sans-serif'
+        'customPoppins': 'Poppins, sans-serif',
+        'customGaramond': "'Cormorant Garamond', serif"
       },
       colors: {
-        'artificialNavyBlue': '#0F1624',
+        'artificialNavyBlue': '#262734',
         'artificialCyan': '#13ADC7',
         'artificialBlue': '#6978D1',
       }

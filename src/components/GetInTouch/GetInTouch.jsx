@@ -1,4 +1,3 @@
-import axios from "axios";
 import Btn from "../Btn";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,7 +26,7 @@ const GetInTouch = () => {
   }
    
   return (
-    <div id="getInTouch" data-aos="zoom-in" className="max-w-md  mx-auto bg-artificialNavyBlue border border-white text-white pb-4 p-6 bg- rounded-md shadow-md">
+    <div id="getInTouch" className="max-w-md  mx-auto bg-artificialNavyBlue border border-white text-white pb-4 p-6 bg- rounded-md shadow-md">
       <h2 className="mt-20 ml-3 font-bold text-4xl ">Get In Touch</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
