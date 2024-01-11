@@ -1,3 +1,4 @@
+import AnimatedNavbar from "../../components/AnimatedNavbar/AnimatedNavbar";
 import Banner from "../../components/Banner/Banner";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
@@ -9,8 +10,11 @@ import Navbar from "../../shared/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <>
+      <AnimatedNavbar />
+      <div className="md:ml-20">
       <Navbar />
+      
       <Banner />
       <Projects />
       <Skills />
@@ -18,7 +22,8 @@ const Home = () => {
       <Contact />
       <GetInTouch />
       <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 

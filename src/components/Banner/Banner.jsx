@@ -36,14 +36,14 @@ const Banner = () => {
    
 
 <Tooltip id="myName" />
-      <AnimatedNavbar />
+     
 
 <div className="grid grid-cols-1 md:grid-cols-2  relative items-center mx-auto mt-11">
 
 
 
 
-    <div className="md:ml-20 ml-1 ">
+    <div className=" ml-1 ">
 <h3 className="text-3xl md:text-6xl  mt-16 font-bold font-customGaramond text-center">Hi! I'm Jahid Hasan</h3>
 <TypeAnime />
 

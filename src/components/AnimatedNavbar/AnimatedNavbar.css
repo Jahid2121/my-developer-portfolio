@@ -1,0 +1,28 @@
+
+
+.nav-Item{
+    width: 40px;
+    transition: width 1600ms ease;
+    
+
+}
+
+.nav-Item:hover {
+    width: 200px;
+    padding-right: 180px;
+    
+    
+    
+}
+
+.nav-Item:hover .link-text {
+    display: inline;
+    font-size: 22px;
+}
+  
+ 
+  .link-text {
+    display: none;
+    margin-left: 10px;
+  }
+
