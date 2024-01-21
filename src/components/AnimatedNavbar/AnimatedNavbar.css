@@ -1,28 +1,22 @@
-
-
-.nav-Item{
-    width: 40px;
-    transition: width 1600ms ease;
-    
-
+.nav-Item {
+  width: 50px;
+  transition: width 1600ms ease;
 }
 
 .nav-Item:hover {
-    width: 200px;
-    padding-right: 180px;
-    
-    
-    
+  border-radius: 20px;
+  padding-right: 140px;
+  background-color: white;
+  color: #212529;
 }
 
 .nav-Item:hover .link-text {
-    display: inline;
-    font-size: 22px;
+  display: inline;
+  font-size: 22px;
+  color: black;
 }
-  
- 
-  .link-text {
-    display: none;
-    margin-left: 10px;
-  }
 
+.link-text {
+  display: none;
+  margin-left: 10px;
+}

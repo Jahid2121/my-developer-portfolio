@@ -1,4 +1,7 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaGithubAlt, FaLinkedin } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { TiSocialLinkedin } from "react-icons/ti";
+
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -13,10 +16,10 @@ const Navbar = () => {
   </span>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <Link to="https://github.com/Jahid2121">
-        <div className=" text-2xl md:text-5xl"><FaGithub /></div>
+        <div className=" text-2xl border mt-1 rounded-full p-1 hover:bg-white hover:text-black md:text-5xl"><FiGithub /></div>
 </Link>
     <Link to="https://www.linkedin.com/in/md-jahid-hasan01">
-    <div className="timeline-end  text-2xl md:text-5xl"> <FaLinkedin /></div></Link>
+    <div className="timeline-end  border rounded-full p-1 hover:bg-white hover:text-black   text-2xl md:text-5xl"> <TiSocialLinkedin /></div></Link>
     
 
   </div>

@@ -11,18 +11,20 @@ import Navbar from "../../shared/Navbar";
 const Home = () => {
   return (
     <>
+      <div className="md:block hidden">
       <AnimatedNavbar />
-      <div className="md:ml-20">
+      </div>
       <Navbar />
       
+      <div className="md:ml-20">
       <Banner />
+      </div>
       <Projects />
       <Skills />
       <StudyInfo />
-      <Contact />
       <GetInTouch />
+      <Contact />
       <Footer />
-      </div>
     </>
   );
 };
