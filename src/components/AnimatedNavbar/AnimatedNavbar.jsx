@@ -1,5 +1,5 @@
 import {  FaEnvelope,  FaHome } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import "../AnimatedNavbar/AnimatedNavbar.css"
 const AnimatedNavbar = () => {
   return (

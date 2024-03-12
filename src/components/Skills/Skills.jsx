@@ -7,7 +7,11 @@ import SectionTitle from "../SectionTitle";
         <SectionTitle Title="<Skills" />
        <p>
   <span className="text-center mx-auto ">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,firebase,mongodb,express" />
+  <p className="align-middle">
+    <a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=html,css,js,react,mongodb,express,nodejs,nextjs,figma,npm,vercel,vite,vscode,materialui" />
+    </a>
+  </p>
   </span>
 </p>
 <div className="flex justify-end">

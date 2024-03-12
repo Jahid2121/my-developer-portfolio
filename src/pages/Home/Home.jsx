@@ -1,4 +1,3 @@
-import AnimatedNavbar from "../../components/AnimatedNavbar/AnimatedNavbar";
 import Banner from "../../components/Banner/Banner";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
@@ -11,9 +10,9 @@ import Navbar from "../../shared/Navbar";
 const Home = () => {
   return (
     <>
-      <div className="md:block hidden">
+      {/* <div className="md:block hidden">
       <AnimatedNavbar />
-      </div>
+      </div> */}
       <Navbar />
       
       <div className="md:ml-20">
