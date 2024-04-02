@@ -7,7 +7,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Banner = () => {
   const handleDownload = () => {
-    const pdfFilePath = '/public/Jahid Hasan Resume canva.pdf'
+    const pdfFilePath = '/public/Resume of Jahid (Front End Developer).pdf'
     fetch(pdfFilePath)
     .then(res => res.blob())
     .then(blob => {
@@ -63,7 +63,7 @@ onClick={handleDownload}
 </div>
     
     <div>
-    <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan"  className="w-auto  p-3" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" alt="" />
+    <img data-tooltip-id="myName" data-tooltip-content="Jahid Hasan"  className="w-auto  p-3" src="https://i.ibb.co/K99J8xX/Professional-profile.png" alt="" />
     </div>
     </div>
 </div>

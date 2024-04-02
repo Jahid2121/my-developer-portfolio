@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer data-aos="fade-up" className=" mt-14 pb-7 border border-white p-8  text-white">
+    <footer className=" mt-14 pb-7 border border-white p-8  text-white">
     <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2  gap-16">
         <span className="flex items-center space-x-3 rtl:space-x-reverse">
