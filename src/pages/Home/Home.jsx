@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
-import StudyInfo from "../../components/StudyInfo/StudyInfo";
+import WhyHireMe from "../../components/WhyMe/WhyHireMe";
 import Navbar from "../../shared/Navbar";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <Projects />
       <Skills />
-      <StudyInfo />
+      <WhyHireMe />
       <GetInTouch />
       <Contact />
       <Footer />

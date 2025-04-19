@@ -7,7 +7,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Banner = () => {
   const handleDownload = () => {
-    const pdfFilePath = '/public/Resume of Jahid (Front End Developer).pdf'
+    const pdfFilePath = '/public/Resume_Of_Jahid_hasan.pdf'
     fetch(pdfFilePath)
     .then(res => res.blob())
     .then(blob => {
@@ -47,7 +47,7 @@ const Banner = () => {
 
 <p className="text-center text-xs">Explore my projects, check out my skills, and let&apos;s collaborate on your next digital venture.</p>
 
-<div className="mt-3 ml-[90px]  md:ml-52"  >
+<div className="mt-3 ml-[120px] md:ml-60">
 <span  >
 <button
 className=""

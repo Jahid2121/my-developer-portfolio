@@ -1,4 +1,3 @@
-import { FaGithub, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { TiSocialLinkedin } from "react-icons/ti";
 
@@ -12,7 +11,7 @@ const Navbar = () => {
 <nav className="text-white z-50  dark:bg-gray-900 fixed w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <span className="flex items-center space-x-3 rtl:space-x-reverse">
-      <span className="self-center  text-2xl font-semibold whitespace-nowrap  font-customGaramond dark:text-white">Jahid's Portfolio</span>
+      <span className="self-center  text-2xl font-semibold whitespace-nowrap  font-customGaramond dark:text-white">Jahid&apos;s Portfolio</span>
   </span>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <Link to="https://github.com/Jahid2121">

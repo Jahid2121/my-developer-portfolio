@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="text-white flex text-3xl items-center gap-3">
               <span className="border p-2 rounded-full hover:bg-white hover:text-black sm:p-1"><MdEmail /></span> <span className="font-semibold">Email</span>
             </div>
-            <p className="">Jahidsarkar2121@gmail.com</p>
+            <p className="">jahidhasan20u@gmail.com</p>
           </div>
         </div>
       
